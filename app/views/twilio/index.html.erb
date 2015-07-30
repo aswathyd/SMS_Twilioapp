@@ -1,0 +1,15 @@
+<h1>NEW USER!!!</h1>
+
+    <%= form_tag('/send_sms', method: 'POST') do %>
+     <label for="number">Phone number</label>
+ 	<input type="text" placeholder="enter number" name="number">
+ 	</br>
+ 	</br>
+
+ 	<label for="message">Your Message</label>
+
+    <input type="text" placeholder="enter message here" name="message">
+
+
+    <button type="submit">Submit</button>
+    <% end %>
